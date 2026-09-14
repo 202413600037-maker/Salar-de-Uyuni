@@ -1,0 +1,355 @@
+header {
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.logo h3 {
+    color: #111111;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    color: #666666;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 0;
+    position: relative;
+    transition: 0.3s;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #111111;
+    transition: width 0.3s ease;
+}
+
+nav a:hover {
+    color: #111111;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.form-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 130px 26px 40px;
+    background: #f4f4f5;
+}
+
+.form-card {
+    width: 100%;
+    max-width: 480px;
+    background: #ffffff;
+    border-radius: 4px;
+    padding: 45px 40px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+    border: 1px solid #eeeeee;
+}
+
+.form-card h1 {
+    color: #111111;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+}
+
+.form-card h1 i {
+    color: #111111;
+}
+
+.form-sub {
+    text-align: center;
+    color: #666666;
+    font-size: 14px;
+    margin-bottom: 35px;
+    letter-spacing: 0.5px;
+}
+
+.etapas {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.etapa {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    background: #ffffff;
+    border: 2px solid #e0e0e0;
+    color: #999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.etapa.ativa {
+    border-color: #111111;
+    background: #ffffff;
+    color: #111111;
+}
+
+.etapa.concluida {
+    background: #111111;
+    border-color: #111111;
+    color: #ffffff;
+}
+
+.etapa-linha {
+    flex: 1;
+    height: 2px;
+    background: #e0e0e0;
+    margin: 0 12px;
+}
+
+.etapa-linha.concluida {
+    background: #111111;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+}
+
+.campo label {
+    color: #111111;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.campo input {
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    padding: 14px 15px;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+    background: #ffffff;
+}
+
+.campo input:focus {
+    border-color: #111111;
+    box-shadow: 0 0 0 1px #111111;
+}
+
+.linha-dupla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.input-senha {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.input-senha:focus-within {
+    border-color: #111111;
+    box-shadow: 0 0 0 1px #111111;
+}
+
+.input-senha input {
+    flex: 1;
+    border: none;
+    padding: 14px 16px;
+    outline: none;
+    background: transparent;
+}
+
+.input-senha button {
+    border: none;
+    background: transparent;
+    padding: 0 16px;
+    cursor: pointer;
+    color: #999999;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.input-senha button:hover {
+    color: #111111;
+}
+
+.input-cep {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.input-cep:focus-within {
+    border-color: #111111;
+    box-shadow: 0 0 0 1px #111111;
+}
+
+.input-cep input {
+    flex: 1;
+    border: none;
+    padding: 14px 16px;
+    outline: none;
+    background: transparent;
+}
+
+.input-cep button {
+    border: none;
+    background: #111111;
+    color: #ffffff;
+    padding: 14px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.input-cep button:hover {
+    background: #333333;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 4px;
+    background: #111111;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.btn-submit:hover {
+    background: #333333;
+}
+
+.btn-submit:active {
+    transform: scale(0.98);
+}
+
+.form-links {
+    text-align: center;
+    margin-top: 25px;
+    color: #666666;
+    font-size: 14px;
+}
+
+.form-links a {
+    color: #111111;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.form-links a:hover {
+    border-bottom: 1px solid #111111;
+}
+
+.erro {
+    color: #d93025;
+    font-size: 12px;
+    margin-top: 6px;
+    font-weight: 500;
+}
+
+.mensagem-status {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.mensagem-erro {
+    color: #d93025;
+    background: #fce8e6;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.mensagem-sucesso {
+    color: #188038;
+    background: #e6f4ea;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+@media(max-width: 600px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    .form-card {
+        padding: 30px 20px;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+    }
+
+    .form-card h1 {
+        font-size: 24px;
+    }
+
+    .linha-dupla {
+        grid-template-columns: 1fr;
+    }
+}

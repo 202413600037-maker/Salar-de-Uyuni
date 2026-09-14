@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="imgs/icon.svg">
+        <title>Salar De Uyuni</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/login.css">
+    </head>
+<body>
+
+
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="imgs/logo.svg" alt="Logo">
+        </a>
+        
+    </div>
+
+
+    <nav>
+        <a href="index.html">Home</a>
+        </a>
+    </nav>
+</header>
+
+<div class="form-container">
+    <div class="form-card">
+        <h1>Entrar</h1>
+        <p class="form-sub">Acesse sua conta para continuar</p>
+
+        <div id="mensagem-status" class="mensagem-status"></div>
+
+        <form action="php/login.php" method="POST">
+            <input type="hidden" id="returnUrl" name="returnUrl" value="">
+
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            </div>
+
+            <div class="campo">
+                <label for="senha">Senha</label>
+                <div class="input-senha">
+                    <input type="password" id="senha" name="senha" placeholder="Sua senha" minlength="6" required>
+                    <button type="button" data-toggle-senha data-target="senha">Mostrar</button>
+                </div>
+            </div>
+
+            <button type="submit" name="acessar" class="btn-submit">
+                <i class="ri-login-box-line"></i> Entrar
+            </button>
+        </form>
+
+        <div class="form-links">
+            <p>Não tem conta? <a href="cadastro1.html">Cadastrar</a></p>
+        </div>
+    </div>
+</div>
+
+<script src="js/forms.js"></script>
+</body>
+</html>
